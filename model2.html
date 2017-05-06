@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="build/react.js"></script>
+		<script src="build/react-dom.js"></script>
+		<script src="build/browser.min.js"></script>
+		<style type="text/css">
+			.alert-text{
+				color:red;
+			}
+		</style>
+		<!--<script src="http://cdn.bootcss.com/react/15.4.2/react.js"></script>
+		<script src="http://cdn.bootcss.com/react/0.14.0-beta3/JSXTransformer.js" type="text/javascript" charset="utf-8"></script>-->
+	</head>
+	<body>
+		<div id="container">
+			1212
+		</div>
+		<script type="text/babel">
+			var Hello=React.createClass({
+				render:function(){
+					return <div className="alert-text">Hello {this.props.title} {this.props.name}</div>;
+				}
+			});
+			React.render(<Hello name="World" title="Mr"/>,document.getElementById('container'));
+		</script>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
